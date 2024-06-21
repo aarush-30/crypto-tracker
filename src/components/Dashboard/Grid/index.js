@@ -7,7 +7,7 @@ import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import { saveItemToWatchlist } from "../../../functions/saveItemToWatchlist";
 import StarIcon from "@mui/icons-material/Star";
 import { removeItemToWatchlist } from "../../../functions/removeItemToWatchlist";
-
+import { Link } from "react-router-dom";
 function Grid({ coin, delay }) {
   const watchlist = JSON.parse(localStorage.getItem("watchlist"));
   const [isCoinAdded, setIsCoinAdded] = useState(watchlist?.includes(coin.id));
