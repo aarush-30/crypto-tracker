@@ -47,6 +47,18 @@ function Header() {
       
       <div className="links">
         <Switch checked={darkMode} onClick={() => changeMode()} />
+        {/* <a href="/">
+          <p className="link">Home</p>
+        </a>
+        <a href="/compare">
+          <p className="link">Compare</p>
+        </a>
+        <a href="/watchlist">
+          <p className="link">Watchlist</p>
+        </a>
+        <a href="/dashboard">
+          <Button text={"dashboard"} />
+        </a> */}
         <Link to="/">
         <p className="link">Home</p>
       </Link>
