@@ -13,7 +13,7 @@ function Grid({ coin, delay }) {
   const [isCoinAdded, setIsCoinAdded] = useState(watchlist?.includes(coin.id));
 
   return (
-    <a href={`/coin/${coin.id}`}>
+    <Link to={`/coin/${coin.id}`}>
       <motion.div
         className={`grid ${coin.price_change_percentage_24h < 0 && "grid-red"}`}
         initial={{ opacity: 0, y: 50 }}
@@ -81,7 +81,7 @@ function Grid({ coin, delay }) {
           Market Capital : ${coin.market_cap.toLocaleString()}
         </p>
       </motion.div>
-    </a>
+    </Link>
   );
 }
 
